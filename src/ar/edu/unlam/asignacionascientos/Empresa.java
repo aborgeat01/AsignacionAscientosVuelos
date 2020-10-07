@@ -8,6 +8,7 @@ public class Empresa {
 	private HashSet<Vuelo> vuelos;
 	private HashSet<Pasajero> Pasajeros;
 	private HashSet<AsignacionAsciento> asignacionesAsientos;
+	private HashSet<Avion> aviones;
 
 	public Empresa(String nombre) {
 
@@ -15,6 +16,7 @@ public class Empresa {
 		this.vuelos = new HashSet<Vuelo>();
 		this.Pasajeros = new HashSet<Pasajero>();
 		this.asignacionesAsientos = new HashSet<AsignacionAsciento>();
+		this.aviones=new HashSet<>();
 
 	}
 
@@ -38,18 +40,23 @@ public class Empresa {
 	public Boolean verificarSiExisteUnAsientoEnUnAvion(Integer idAvion, String asciento) {
 		return null;
 	}
-
+                                                                 
 	public Boolean verificarAsientoDiponibleParaUnVuelo(Integer idVuelo, String asciento) {
-
-		return null;
+		
+		
+		
+		return true;
 	}
 
 	public Boolean asignarAsientoPasajeroParaUnVuelo(Integer idVuelo, Integer dni, String numeroAciento) {
 
+		
 		return null;
 	}
 
 	public HashSet<String> obtenerListaDeascientoDeUnAvion(Integer idAvion) {
+	
+		
 		return null;
 	}
 
@@ -58,7 +65,7 @@ public class Empresa {
 	}
 
 	public HashSet<String> obtenerListaDeAscientoDisponibleDeUnVuelo(Integer IdVuelo) {
-		return null;
+		return  null;
 	}
 	
 	public Boolean cambiarAscientoDeUnPasajeroParaUnVuelo(Integer idVuelo, Integer dni, String nuevoAsciento) {
