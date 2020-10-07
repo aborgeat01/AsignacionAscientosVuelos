@@ -1,12 +1,12 @@
 package ar.edu.unlam.asignacionascientos;
 
-public class AsignacionAsciento {
+public class AsignacionAsiento {
 
 	private Integer id;
 	private Vuelo vuelo;
 	private Pasajero pasajero;
 	private String asciento;
-	public AsignacionAsciento(Integer id, Vuelo vuelo, Pasajero pasajero, String asciento) {
+	public AsignacionAsiento(Integer id, Vuelo vuelo, Pasajero pasajero, String asciento) {
 		super();
 		this.id = id;
 		this.vuelo = vuelo;
@@ -28,7 +28,7 @@ public class AsignacionAsciento {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AsignacionAsciento other = (AsignacionAsciento) obj;
+		AsignacionAsiento other = (AsignacionAsiento) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
